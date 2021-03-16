@@ -1,0 +1,14 @@
+.container {
+  width: auto;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+main {
+  min-height: 93vh;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=styles.css.map */

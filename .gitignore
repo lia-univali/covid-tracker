@@ -1,0 +1,8 @@
+/casos/src/video/*
+/casos/casos.avi
+/letalidade/src/video/*
+/letalidade/letalidade.avi
+/mortalidade/src/video/*
+/mortalidade/mortalidade.avi
+*.ini
+caso_full.csv
