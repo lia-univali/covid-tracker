@@ -19,4 +19,8 @@ h3 {
   font-size: 1.1rem;
   color: #0984e3;
 }
+
+embed, video {
+  max-width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
