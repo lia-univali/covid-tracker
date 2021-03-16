@@ -31,51 +31,89 @@
             <h3>Avanço Temporal</h3>
             <p>Avanço dos casos de COVID 19 no Estado (com base na quantidade de casos confirmados para cada 100 mil habitantes)</p>
             <video width="800" height="500" controls>
-                <source src="videos/casos.mp4" type="video/mp4">
+                <source src="videos/casos.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
             <hr>
             <h3>Curvas de Casos positivos</h3>
             <p>Avanço dos casos de COVID 19 no Estado (com base na quantidade de casos confirmados para cada 100 mil habitantes)</p>
-            <embed type="text/html" src="avanco_casos.html" width="800" height="500">
+            <embed type="text/html" src="avanco_casos.html" width="800" height="500"/>
             <hr>
             <h3>Mapa Atual</h3>
             <p>Mapa demonstrando a atual situação de contágio da COVID 19 no Estado (com base na quantidade de casos confirmados para cada 100 mil habitantes)</p>
-            <embed type="text/html" src="casos/src/2021-03-15.html" width="800" height="400">
+            <embed type="text/html" src="casos/src/2021-03-15.html" width="800" height="400"/>
+            <hr/>
+            <h3>Média Movel</h3>
+            <p>Médias móveis (7 dias) de novos casos por COVID 19 em Itajaí, na região da AMFRI e no Estado de Santa Catarina</p>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Itajaí</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">AMFRI</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Santa Catarina</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><embed type="text/html" src="medias/casos_itj.html" width="800" height="500"></div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><embed type="text/html" src="medias/casos_amfri.html" width="800" height="500"></div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><embed type="text/html" src="medias/casos_sc.html" width="800" height="500"></div>
+            </div>
         </section>
         <section class="container">
             <h2 class="mt-5">Letalidade</h2>
             <h3>Avanço Temporal</h3>
             <p>Avanço da letalidade da COVID 19 no Estado (em percentual)</p>
             <video width="800" height="500" controls>
-                <source src="videos/letalidade.mp4" type="video/mp4">
+                <source src="videos/letalidade.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
             <hr>
             <h3>Curvas de Letalidade</h3>
             <p>Avanço da letalidade da COVID 19 no Estado (em percentual)</p>
-            <embed type="text/html" src="letalidade.html" width="800" height="500">
+            <embed type="text/html" src="letalidade.html" width="800" height="500"/>
             <hr>
             <h3>Mapa Atual</h3>
             <p>Mapa demonstrando a atual situação da letalidade da COVID 19 no Estado (em percentual)</p>
-            <embed type="text/html" src="letalidade/src/2021-03-15.html" width="800" height="400">
+            <embed type="text/html" src="letalidade/src/2021-03-15.html" width="800" height="400"/>
         </section>
         <section class="container">
             <h2 class="mt-5">Mortalidade</h2>
             <h3>Avanço Temporal</h3>
             <p>Avanço da mortalidade da COVID 19 no Estado (com base na quantidade de mortes para cada 100 mil habitantes)</p>
             <video width="800" height="500" controls>
-                <source src="videos/mortalidade.mp4" type="video/mp4">
+                <source src="videos/mortalidade.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
             <hr>
             <h3>Curvas de Mortalidade</h3>
             <p>Avanço da mortalidade da COVID 19 no Estado (com base na quantidade de mortes para cada 100 mil habitantes)</p>
-            <embed type="text/html" src="mortalidade.html" width="800" height="500">
+            <embed type="text/html" src="mortalidade.html" width="800" height="500"/>
             <hr>
             <h3>Mapa Atual</h3>
             <p>Mapa demonstrando a atual situação da mortalidade da COVID 19 no Estado (com base na quantidade de mortes para cada 100 mil habitantes)</p>
-            <embed type="text/html" src="mortalidade/src/2021-03-15.html" width="800" height="400">
+            <embed type="text/html" src="mortalidade/src/2021-03-15.html" width="800" height="400"/>
+            <hr/>
+            <h3>Média Movel</h3>
+            <p>Médias móveis (7 dias) de óbitos por COVID 19 em Itajaí, na região da AMFRI e no Estado de Santa Catarina</p>
+            <ul class="nav nav-tabs" id="obito_tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#obitoitj" type="button" role="tab" aria-controls="home" aria-selected="true">Itajaí</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#obitoamfri" type="button" role="tab" aria-controls="profile" aria-selected="false">AMFRI</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#obitosc" type="button" role="tab" aria-controls="contact" aria-selected="false">Santa Catarina</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="obito_tabContent">
+                <div class="tab-pane fade show active" id="obitoitj" role="tabpanel" aria-labelledby="home-tab"><embed type="text/html" src="medias/obitos_itj.html" width="800" height="500"></div>
+                <div class="tab-pane fade" id="obitoamfri" role="tabpanel" aria-labelledby="profile-tab"><embed type="text/html" src="medias/obitos_amfri.html" width="800" height="500"></div>
+                <div class="tab-pane fade" id="obitosc" role="tabpanel" aria-labelledby="contact-tab"><embed type="text/html" src="medias/obitos_sc.html" width="800" height="500"></div>
+            </div>
         </section>
     </main>
 
