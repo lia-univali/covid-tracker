@@ -8,7 +8,15 @@ main {
   min-height: 93vh;
 }
 
+h2 {
+  color: #333;
+  padding: .5rem 2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #0984e3;
+}
+
 h3 {
   font-size: 1.1rem;
+  color: #0984e3;
 }
 /*# sourceMappingURL=styles.css.map */
