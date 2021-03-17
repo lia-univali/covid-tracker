@@ -25,7 +25,15 @@
             <p>
                 Caso deseje, você ainda pode acessá-la pelo celular. Entretanto os gráficos podem apresentar problemas de renderização.
             </p>
-            <button type="button" class="btn btn-primary" onclick='free()'>Quero Acessar</button>
+            <div class="checker text-center">
+                <div class="form-check text-center">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Quero Acessar
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick='free()'>Continuar</button>
         </div>
         
     </div>
@@ -168,8 +176,10 @@
                 <div class="tab-pane fade" id="boxo_sc" role="tabpanel" aria-labelledby="contact-tab"><embed type="text/html" src="box/novos_obitos_sc.html" width="800" height="500"></div>
             </div>
         </section>
+        <div id="alert" class="alert hidden">
+            ⚠ <small>Modo mobile</small>
+        </div>
     </main>
-
     <footer id="footer" class="footer mt-5 py-3 bg-light text-center">
         <div class="container">
             <span class="text-muted">coded with ❤ by <a href="http://alissonsteffens.com">Alisson</a><span>
@@ -185,9 +195,16 @@
         crossorigin="anonymous"></script>
     <script>
         function free(){
-            $('#main').removeClass('desktop');
-            $('#aviso').hide();
-            $('footer').addClass('force');
+            var aceitou = $('#flexCheckDefault').prop("checked")
+            if(aceitou){
+                $('#alert').removeClass('hidden');
+                $('#main').removeClass('desktop');
+                $('#aviso').hide();
+                $('footer').addClass('force');
+            }else{
+                alert("Aceite os termos para continuar")
+            }
+            
         }
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->

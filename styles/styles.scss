@@ -10,6 +10,11 @@ $mobile_size: '768px';
     img{
         padding-bottom: 1.25rem;
     }
+    .checker{
+        max-width: 150px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
 }
 footer{
     position: fixed;
@@ -33,6 +38,19 @@ main{
     @media (min-width: $mobile_size) {
         display: none;
     }
+}
+.alert{
+    @media (max-width: $mobile_size) {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        background-color:#ff7675;
+        padding: .2rem;
+        color: #fff;
+    }
+}
+.hidden{
+    display: none;
 }
 .desktop{
     display: none;
