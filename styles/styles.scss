@@ -32,6 +32,18 @@ footer{
 main{
     min-height: 93vh;
 }
+
+.iconed-alert{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-items: center;
+    padding: 0 1rem;
+    .alert-icon{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+
 .mobile{
     display: grid;
     place-items: center;

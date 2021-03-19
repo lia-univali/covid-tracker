@@ -39,6 +39,20 @@ main {
   min-height: 93vh;
 }
 
+.iconed-alert {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  place-items: center;
+  padding: 0 1rem;
+}
+
+.iconed-alert .alert-icon {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 .mobile {
   display: -ms-grid;
   display: grid;

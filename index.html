@@ -11,6 +11,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e3e03f2b7c.js" crossorigin="anonymous"></script>
     <title>Covid em SC</title>
 </head>
 
@@ -44,9 +45,16 @@
             <p class="lead">
                 Esta página foi desenvolvida por iniciativa de pesquisadores do Programa de Pós Graduação em Saúde e Gestão do Trabalho e do Mestrado em Computação Aplicada com a intenção de avaliar o atual estado da pandemia no Estado de Santa Catarina. Em especial a região da Amfri.
             </p>
+            <div class="alert alert-info iconed-alert" role="alert">
+                <div class="alert-icon"><i class="fas fa-info-circle"></i></div>
+                <div class='alert-text'>
+                    Municipios que fazem parte da <b>Amfri</b>: Balneário Camboriú, Balneário Piçarras, Bombinhas, Camboriú, Itajaí, Ilhota, Itapema, Luiz Alves, Navegantes, Penha e Porto Belo.
+                </div>
+            </div>
             <p>
                 Os dados apresentados são provenientes da plataforma <a href="https://brasil.io/home/" target="_blank">brasil.io</a> e da <a href="https://servicodados.ibge.gov.br/api/docs" target="_blank">API do IBGE</a>. Os dados foram processados em Python, e o código fonte pode ser encontrado no <a href="https://github.com/lia-univali/covid-tracker" target="_blank">Github</a>
             </p>
+            
         </section>
         <section class="container">
             <h2 class="mt-5">Casos</h2>
@@ -99,7 +107,7 @@
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="box_itj" role="tabpanel" aria-labelledby="home-tab"><embed type="text/html" src="box/novos_casos_itj.html" width="800" height="500"></div>
-                <div class="tab-pane fade" id="box_amf" role="tabpanel" aria-labelledby="profile-tab"><embed type="text/html" src="box/novos_casos_amfri.html" width="800" height="500"></div>
+                <div class="tab-pane fade" id="box_amf" role="tabpanel" aria-labelledby="profile-tab"><embed type="text/html" src="box/novos_casos_amfri.html" width="800" height="500"> </div>
                 <div class="tab-pane fade" id="box_sc" role="tabpanel" aria-labelledby="contact-tab"><embed type="text/html" src="box/novos_casos_sc.html" width="800" height="500"></div>
             </div>
             
