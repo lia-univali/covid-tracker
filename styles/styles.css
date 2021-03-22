@@ -53,6 +53,16 @@ main {
   padding: 1rem;
 }
 
+.iconed-alert.thin {
+  padding: 0 .2rem;
+  font-size: .8rem;
+}
+
+.iconed-alert.thin .alert-icon {
+  font-size: 1rem;
+  padding: .2rem;
+}
+
 .mobile {
   display: -ms-grid;
   display: grid;
