@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e3e03f2b7c.js" crossorigin="anonymous"></script>
+    <script src="last_update.js"></script>
     <title>Covid em SC</title>
 </head>
 
@@ -44,6 +45,8 @@
     <main id="main" class="flex-shrink-0 desktop">
         <section class="container">
             <h1 class="mt-5">Covid 19 em Santa Catarina</h1>
+            <div class='' id="last_update">
+            </div>
             <p class="lead">
                 Esta página foi desenvolvida por iniciativa de pesquisadores do Programa de Pós Graduação em Saúde e
                 Gestão do Trabalho e do Mestrado em Computação Aplicada com a intenção de avaliar o atual estado da
@@ -260,6 +263,25 @@
             }
 
         }
+        function ready(fn) {
+            if (document.readyState != 'loading') {
+                fn();
+            } else if (document.addEventListener) {
+                document.addEventListener('DOMContentLoaded', fn);
+            } else {
+                document.attachEvent('onreadystatechange', function () {
+                    if (document.readyState != 'loading')
+                        fn();
+                });
+            }
+        }
+
+        // test
+        window.ready(function () {
+            let data = new Date(last_update)
+            let dataFormatada = ((data.getDate() )) + "/" + ((data.getMonth() + 1)) + "/" + data.getFullYear();
+            document.getElementById('last_update').innerHTML = "Atualizado em "+dataFormatada
+        });
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
